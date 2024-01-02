@@ -82,17 +82,22 @@ body{
 }
 .texto__anio{
     font-family: roboM;
-    color: #ffffff;
+    color: #000;
     padding: 10px 0px 0px;
 }
 .link__fav{
     font-family: roboM;
     margin: 20px 0px 0px;
     background-color: #ffffff;
+    border: 1px solid #ffffff;
     padding: 10px 20px;
     text-decoration: none;
     color: #000;
     border-radius: 5px;
+}
+.link__fav:hover{
+    background-color: #ffffffbe;
+    border: 1px solid #ffffffbe;
 }
 
 /* FOOTER */
