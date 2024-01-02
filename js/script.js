@@ -1,6 +1,5 @@
-const container = document.getElementById("container")
+const main = document.getElementById("main")
 
-//idLeague=4387   strSport="Basketball"
 
 const getTeamsAsync = async () =>{
     let response = await fetch("https://www.thesportsdb.com/api/v1/json/3/search_all_teams.php?l=NBA");
@@ -8,27 +7,36 @@ const getTeamsAsync = async () =>{
     console.log(teamsNBA)
     
     teamsNBA.teams.forEach(team => {
+        console.log(team)
         
-        if(team.strLeague === "NBA"){
-            console.log(team)
-            let div = document.createElement("DIV");
-            div.className = ""
-            container.appendChild(div);
+        let section = document.createElement("SECTION");
+        section.className = "card__team"
+        main.appendChild(section);
     
-            let h1 = document.createElement("H1");
-            h1.textContent = team.strTeam
-            h1.className = "title__team"
-            div.appendChild(h1)
+        let h1 = document.createElement("H1");
+        h1.textContent = team.strTeam
+        h1.className = "title__team"
+        section.appendChild(h1)
+
+        let article = document.createElement("ARTICLE");
+        article.className = "article__team"
+        section.appendChild(article)
     
-            let p = document.createElement("P");
-            p.textContent = team.strLeague
-            div.appendChild(p)
-    
-            let img = document.createElement("IMG")
-            img.src = team.strTeamBadge;
-            img.className = "img__logo"
-            p.appendChild(img)
-        }
+        let img = document.createElement("IMG")
+        img.src = team.strTeamBadge;
+        img.className = "img__logo"
+        article.appendChild(img)
+
+        let text = document.createElement("P");
+        text.className = "texto__anio";
+        text.textContent = "Año de fundación: "+team.intFormedYear;
+        section.appendChild(text)
+
+        let link = document.createElement("a");
+        link.href = 
+        link.textContent = "AÑADIR A FAVORITOS";
+        link.className = "link__fav";
+        section.appendChild(link)
         
     });
     

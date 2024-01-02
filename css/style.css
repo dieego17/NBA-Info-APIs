@@ -2,15 +2,120 @@
     font-family: roboM;
     src: url(../assets/fonts/Roboto-Medium.ttf);
 }
-.container{
+
+body{
+    background-color:#171717;
+}
+
+/* CONTAINER */
+.container {
+    min-width: 400px;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+}
+
+/* HEADER */
+.header{
+    background-color: #ffffff;
+}
+.container__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     min-width: 400px;
     max-width: 1400px;
     width: 100%;
     margin: 0 auto;
 }
-.title__team{
-    font-family: roboM;
+.img__header{
+    width: 150px;
 }
-.img__logo{
-    width: 100px;
+.ul__header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+.header__list{
+    padding: 0px 20px;
+}
+.header__link{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: roboM;
+    color: #000;
+}
+
+/* MAIN */
+.main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 0px;
+}
+
+.card__team {
+    margin: 10px;
+    padding: 60px 0px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #a5a5a5;
+    border-radius: 5px;
+    background-color: #a5a5a5;
+}
+
+.title__team {
+    font-family: roboM;
+    font-size: 2rem;
+    color: #ffffff;
+    padding: 0px 0px 10px;
+}
+
+.img__logo {
+    width: 160px;
+}
+.texto__anio{
+    font-family: roboM;
+    color: #ffffff;
+    padding: 10px 0px 0px;
+}
+.link__fav{
+    font-family: roboM;
+    margin: 20px 0px 0px;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000;
+    border-radius: 5px;
+}
+
+/* FOOTER */
+.footer{
+    background-color: #ffffff;
+}
+.container__footer{
+    min-width: 400px;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.section__footer{
+    padding: 20px 0px;
+}
+.text__footer{
+    font-family: roboM;
+    color: #000;
+}
+.font__footer{
+    font-size: 1.5rem;
+    padding: 0px 10px;
+    text-decoration: none;
+    color: #000;
 }

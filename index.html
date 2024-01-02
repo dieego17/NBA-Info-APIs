@@ -4,12 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NBA</title>
+    <link rel="shortcut icon" href="./assets/images/logo_nba.png.webp" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
+    <!-- link para favicons -->
+    <script src="https://kit.fontawesome.com/3ed6284a33.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container" id="container">
+    <header class="header">
+        <div class="container__header">
+            <a href="./index.html"><img class="img__header" src="./assets/images/logo_nba.png.webp" alt=""></a>
+            <nav class="nav__header">
+                <ul class="ul__header">
+                    <li class="header__list"><a class="header__link" href="./index.html">INICIO</a></li>
+                    <li class="header__list"><a class="header__link" href="#">ESTADÍSTICAS</a></li>
+                    <li class="header__list"><a class="header__link" href="#">FAVORITOS</a></li>
+                </ul>
+            </nav>
+        </div>
         
+    </header>
+    <div class="container" id="container">
+        <main class="main" id="main">
+
+        </main>
     </div>
+    <footer class="footer">
+        <div class="container__footer">
+            <section class="section__footer">
+                <article>
+                    <p class="text__footer">© 2023 NBA API. Todos los derechos reservados.</p>
+                </article>
+                <article>
+                    <a href=""><i class="font__footer fa-brands fa-x-twitter"></i></a>
+                    <a href=""><i class="font__footer fa-brands fa-youtube"></i></a>
+                    <a href=""><i class="font__footer fa-brands fa-tiktok"></i></a>
+                </article>
+            </section>
+        </div>
+    </footer>
+    <script src="./js/equipo.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
