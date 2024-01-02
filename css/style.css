@@ -1,0 +1,16 @@
+@font-face {
+    font-family: roboM;
+    src: url(../assets/fonts/Roboto-Medium.ttf);
+}
+.container{
+    min-width: 400px;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+.title__team{
+    font-family: roboM;
+}
+.img__logo{
+    width: 100px;
+}
