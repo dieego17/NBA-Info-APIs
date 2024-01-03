@@ -1,39 +1,9 @@
-class Equipo{
-    constructor(nombre, logo, anio){
-        this.nombre = nombre;
-        this.logo = logo;
-        this.anio = anio;
-    }
-
-    getNombre() {
-        return this.nombre;
-    }
-    setNombre(nombre) {
-        this.nombre = nombre;
-    }
-
-    getLogo() {
-        return this.logo;
-    }
-    setLogo(logo) {
-        this.logo = logo;
-    }
-
-    getAnio() {
-        return this.anio;
-    }
-    setAnio(anio) {
-        this.anio = anio;
-    }
-}
-
 const main = document.getElementById("main")
 
 
 const getTeamsAsync = async () =>{
     let response = await fetch("https://www.thesportsdb.com/api/v1/json/3/search_all_teams.php?l=NBA");
     let teamsNBA = await response.json();
-    console.log(teamsNBA)
     
     teamsNBA.teams.forEach(teamData => {
 
@@ -63,13 +33,34 @@ const getTeamsAsync = async () =>{
         section.appendChild(text)
 
         let link = document.createElement("a");
-        link.href = "#";
+        link.href = "../pages/favoritos.html";
         link.textContent = "AÑADIR A FAVORITOS";
         link.className = "link__fav";
+        link.setAttribute("data__team--name", equipo.getNombre()); // Agregar el nombre del equipo como atributo
+        link.setAttribute("data__team--logo", equipo.getLogo()); // Agregar el logo del equipo como atributo
+        link.setAttribute("data__team--anio", equipo.getAnio()); // Agregar el año del equipo como atributo
+        link.addEventListener("click", agregarFavoritos); // Agregar un evento de clic al enlace
         section.appendChild(link)
         
     });
     
 }
+
+
+const agregarFavoritos = (event) => {
+    event.preventDefault();
+    const equipoNombre = event.target.getAttribute("data__team--name");
+    const equipoLogo = event.target.getAttribute("data__team--logo");
+    const equipoAnio = event.target.getAttribute("data__team--anio");
+
+    const equipoFavorito = {
+        nombre: equipoNombre,
+        logo: equipoLogo,
+        anio: equipoAnio
+    };
+
+    localStorage.setItem("equipoFavorito", JSON.stringify(equipoFavorito));
+};
+
 
 document.addEventListener("DOMContentLoaded", getTeamsAsync);
