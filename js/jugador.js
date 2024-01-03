@@ -116,3 +116,4 @@ const getPlayersAsync = async () => {
 }
 
 document.addEventListener("DOMContentLoaded", getPlayersAsync);
+

@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function() {
         logoEquipo.className = "logo__equipo";
 
         const textNoti = document.createElement("P");
-        textNoti.textContent = "Recibirás notificaciones sobre su equipo";
+        textNoti.textContent = "Recibirás notificaciones sobre su equipo.";
         textNoti.className = "texto__noti"
 
         equipoDiv.appendChild(article__team);
@@ -70,3 +70,4 @@ document.addEventListener("DOMContentLoaded", function() {
         equipoContainer.className = "equipo__container"
     }
 });
+
