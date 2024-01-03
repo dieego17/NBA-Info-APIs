@@ -6,6 +6,8 @@ Este proyecto es una aplicación web que utiliza HTML, CSS y JavaScript para mos
 
 - **Visualización de Equipos:** La aplicación muestra una lista de equipos que forman parte de la NBA con detalles relevantes sobre cada uno.
 
+-  **Visualización de Maximos Anotadores de la liga:** La aplicación muestra una lista de los máximos anotadores que forman parte de la NBA con detalles relevantes sobre cada uno.
+
 - **Añadir Equipos Favoritos:** Los usuarios pueden marcar equipos como favoritos para recibir notificaciones sobre sus próximos partidos.
 
 ## Tecnologías Utilizadas
