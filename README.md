@@ -1,6 +1,6 @@
 # Proyecto de Aplicación Web sobre la NBA
 
-Este proyecto es una aplicación web que utiliza HTML, CSS y JavaScript para mostrar información sobre los equipos de la NBA. Además, integra una API de la NBA.
+Este proyecto es una aplicación web que utiliza HTML, CSS y JavaScript para mostrar información sobre los equipos y jugadores de la NBA. Además, integra dos APIs de la NBA.
 
 ## Funcionalidades
 
@@ -18,9 +18,9 @@ El proyecto se ha desarrollado utilizando las siguientes tecnologías:
   
 - **CSS:** Para el diseño y estilos visuales de la interfaz de usuario.
   
-- **JavaScript:** Para la interactividad, manejo de eventos y peticiones a la API de la NBA.
+- **JavaScript:** Para la interactividad, manejo de eventos y peticiones a las APIs de la NBA.
 
-- **API de la NBA:** Se ha integrado una API de la NBA para obtener datos reales sobre los equipos.
+- **APIs de la NBA:** Se ha integrado una API de la NBA para obtener datos reales sobre los equipos y otra sobre los jugadores.
 
 ## Autor
 
