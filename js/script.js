@@ -36,10 +36,10 @@ const getTeamsAsync = async () =>{
         link.href = "../pages/favoritos.html";
         link.textContent = "AÑADIR A FAVORITOS";
         link.className = "link__fav";
-        link.setAttribute("data__team--name", equipo.getNombre()); // Agregar el nombre del equipo como atributo
-        link.setAttribute("data__team--logo", equipo.getLogo()); // Agregar el logo del equipo como atributo
-        link.setAttribute("data__team--anio", equipo.getAnio()); // Agregar el año del equipo como atributo
-        link.addEventListener("click", agregarFavoritos); // Agregar un evento de clic al enlace
+        link.setAttribute("data__team--name", equipo.getNombre()); 
+        link.setAttribute("data__team--logo", equipo.getLogo()); 
+        link.setAttribute("data__team--anio", equipo.getAnio()); 
+        link.addEventListener("click", agregarFavoritos); 
         section.appendChild(link)
         
     });

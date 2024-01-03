@@ -32,27 +32,41 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if (equipoFavorito) {
 
-        const equipoContainer = document.getElementById("equipo-favorito");
-        const equipoDiv = document.createElement("div");
+        const equipoContainer = document.getElementById("equipo__favorito");
+        const equipoDiv = document.createElement("DIV");
+        equipoDiv.className = "container__tarjeta--fav";
 
-        const nombreEquipo = document.createElement("h2");
+        const article__team = document.createElement("ARTICLE");
+        article__team.className = "article__team";
+
+        const nombreEquipo = document.createElement("H2");
         nombreEquipo.textContent = equipoFavorito.nombre;
+        nombreEquipo.className = "nombre__equipo";
 
-        const logoEquipo = document.createElement("img");
-        logoEquipo.src = equipoFavorito.logo;
-
-        const anioFundacion = document.createElement("p");
+        const anioFundacion = document.createElement("P");
         anioFundacion.textContent = "Año de fundación: " + equipoFavorito.anio;
+        anioFundacion.className = "anio__fundacion";
 
-        equipoDiv.appendChild(nombreEquipo);
+        const logoEquipo = document.createElement("IMG");
+        logoEquipo.src = equipoFavorito.logo;
+        logoEquipo.className = "logo__equipo";
+
+        const textNoti = document.createElement("P");
+        textNoti.textContent = "Recibirás notificaciones sobre su equipo";
+        textNoti.className = "texto__noti"
+
+        equipoDiv.appendChild(article__team);
+        article__team.appendChild(nombreEquipo);
+        article__team.appendChild(anioFundacion);
         equipoDiv.appendChild(logoEquipo);
-        equipoDiv.appendChild(anioFundacion);
 
         equipoContainer.appendChild(equipoDiv);
-        
+        equipoContainer.appendChild(textNoti);
+
     } else {
 
-        const equipoContainer = document.getElementById("equipo-favorito");
+        const equipoContainer = document.getElementById("equipo__favorito");
         equipoContainer.textContent = "No se ha seleccionado ningún equipo favorito.";
+        equipoContainer.className = "equipo__container"
     }
 });
