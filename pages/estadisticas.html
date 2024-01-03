@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/estadisticas.css">
     <title>NBA - FAVORITOS</title>
     <link rel="shortcut icon" href="../assets/images/logo_nba.png.webp" type="image/x-icon">
     <!-- link para favicons -->
@@ -23,8 +24,24 @@
         </div>
     </header>
     <div class="container" id="container">
-        <main class="main" id="main">
-
+        <main class="main__esta" id="main">
+            <h1 class="h1__tabla">Máximos Anotadores de la NBA Temporada (2022 - 2023)</h1>
+            <table class="tabla" id="tablaJugadores">
+                <thead class="tabla__thead">
+                    <tr class="tabla__tr">
+                        <th class="tabla__th">Nombre</th>
+                        <th class="tabla__th">Edad</th>
+                        <th class="tabla__th">Equipo</th>
+                        <th class="tabla__th">Minutos Jugados</th>
+                        <th class="tabla__th">Puntos</th>
+                        <th class="tabla__th">Asistencias</th>
+                        <th class="tabla__th">Rebotes</th>
+                    </tr>
+                </thead>
+                <tbody id="cuerpoTabla">
+                    
+                </tbody>
+            </table>
         </main>
     </div>
     <footer class="footer">
@@ -41,5 +58,6 @@
             </section>
         </div>
     </footer>
+    <script src="../js/jugador.js"></script>
 </body>
 </html>

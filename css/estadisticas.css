@@ -1,0 +1,35 @@
+@font-face {
+    font-family: roboM;
+    src: url(../assets/fonts/Roboto-Medium.ttf);
+}
+.main__esta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.h1__tabla{
+    font-family: roboM;
+    color: #ffffff;
+}
+.tabla{
+    width: 100%;
+    margin: 20px 0px;
+    border-collapse: collapse;
+}
+.tabla__tr, .tabla__thead{
+    border-bottom: 1px solid #ffffff;
+}
+.tabla__th{
+    text-align: center;
+    font-family: roboM;
+    color: #ffffff;
+    padding: 0px 0px 10px;
+    border-bottom: 1px solid #ffffff;
+}
+.tabla__td{
+    text-align: center;
+    padding: 10px 0px;
+    font-family: roboM;
+    color: #ffffff;
+}

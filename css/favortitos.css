@@ -17,7 +17,6 @@
 }
 .container__tarjeta--fav{
     border: 1px solid #ffffff;
-    margin: 40px 0px;
     padding: 30px;
     border-radius: 5px;
     flex-direction: row;
