@@ -5,6 +5,10 @@
 
 body{
     background-color:#171717;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+                        "header" "nav__none" "container" "footer";
 }
 
 /* CONTAINER */
@@ -13,11 +17,13 @@ body{
     max-width: 1400px;
     width: 100%;
     margin: 0 auto;
+    grid-area: "container";
 }
 
 /* HEADER */
 .header{
     background-color: #ffffff;
+    grid-area: header;
 }
 .container__header{
     display: flex;
@@ -46,7 +52,9 @@ body{
     font-family: roboM;
     color: #203A81;
 }
-
+.nav__none{
+    grid-area: nav__none;
+}
 .header__link--min {
     font-size: 1.1rem;
 }
@@ -106,6 +114,7 @@ body{
 /* FOOTER */
 .footer{
     background-color: #ffffff;
+    grid-area: footer;
 }
 .container__footer{
     min-width: 400px;
