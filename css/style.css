@@ -9,7 +9,7 @@ body{
 
 /* CONTAINER */
 .container {
-    min-width: 450px;
+    min-width: 400px;
     max-width: 1400px;
     width: 100%;
     margin: 0 auto;
@@ -45,6 +45,10 @@ body{
     font-size: 1.3rem;
     font-family: roboM;
     color: #203A81;
+}
+
+.header__link--min {
+    font-size: 1.1rem;
 }
 
 /* MAIN */

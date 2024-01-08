@@ -1,10 +1,13 @@
-@media screen and (min-width: 450px){
+@media screen and (min-width: 420px){
     .container__hambur{
         display: flex;
         margin: 0px 40px;
     }
     .nav__header{
         display: none;
+    }
+    .tabla{
+        font-size: 0.6rem;
     }
 }
 
@@ -14,6 +17,9 @@
     }
     .nav__header{
         display: none;
+    }
+    .tabla{
+        font-size: 1rem;
     }
 }
 
